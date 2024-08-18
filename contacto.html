@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>Contacto</title>
 </head>
 <body>
     <!--Comentario-->
     <header>
         <nav>
-            <a href="sena.html">sena</a>
 
             <a href="inicio.html">Inicio</a>
 
@@ -21,6 +20,65 @@
 
             <a href="contacto.html">Contacto</a>
         </nav>
+
+        <section>
+            <h2>¿Quieres que nos pongamos en contacto contigo?</h2>
+            <p>Llena el siguiente formulario</p>
+        </section>
+        <section> 
+            <form action="inicio.html" method="get">
+                <label for="tipoid">Tipo de Documento</label><br>
+                <input type="text" id="tipoid" name="Tipo de ID" value="" placeholder="Ingrese su tipo de Documento" required><br>
+                <label for="numeroid">Número de Documento</label><br>
+                <input type="number" id="numeroid" name="Numero de ID" value="" placeholder="Ingrese su Número de Documento" required step="0.5"><br>
+                <label for="primernom">Primer Nombre</label><br>
+                <input type="text" id="primernom" name="Primer Nombre" value="" placeholder="Ingrese su Primer Nombre" required><br>
+                <label for="segunombre">Segundo Nombre</label><br>
+                <input type="text" id="segunombre" name="Segundo Nombre" value="" placeholder="Ingrese su Segundo Nombre" required><br>
+                
+                <div>
+                <label for="primerape">Primer Apellido</label><br>
+                <input type="text" id="primerape" name="Primer Apellido" value="" placeholder="Ingrese su Primer Apellido" required><br>
+            </div>
+
+                <div>
+                <label for="segunape">Segundo Apellido</label><br>
+                <input type="text" id="segunape" name="Segundo Apellido" value="" placeholder="Ingrese su Segundo Apellido" required><br>
+            </div>
+
+                <div>
+                <label for="numeroconta">Número de Contacto</label><br>
+                <input type="text" id="numeroconta" name="Numero de contacto" value="" placeholder="Ingrese su número de contacto" required pattern="^[0-9]*$">
+                </div>
+                <button>Enviar</button>
+
+                <div>
+                    <label for="checkhtml">HTML</label>
+                    <input type="checkbox" name="HTML" id="checkhtml">
+
+                    <label for="checkcss">CSS</label>
+                    <input type="checkbox" name="CSS" id="checkcss">
+
+                    <label for="checkjava">JavaScript</label>
+                    <input type="checkbox" name="JavaScript" id="checkjava">
+                </div>
+
+                <div>
+                    <label for="Hombre">Mujer</label>
+                    <input type="radio" name="genero" id="Hombre">
+                </div>
+
+                <div>
+                    <label for="Mujer">Hombre</label>
+                    <input type="radio" name="genero" id="Mujer">
+                </div>
+
+                <div>
+                    <label for="Lista1">Lista</label>
+                    <select name="listadesplegable" id="Lista1"></select>
+                </div>
+            </form>
+        </section>
     </header>
     <main></main>
     <footer></footer>
