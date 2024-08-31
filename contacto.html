@@ -26,7 +26,7 @@
             <p>Llena el siguiente formulario</p>
         </section>
         <section> 
-            <form action="inicio.html" method="get">
+            <form action="inicio.html" method="get" enctype="multipart/form-data" novalidate>
                 <label for="tipoid">Tipo de Documento</label><br>
                 <input type="text" id="tipoid" name="Tipo de ID" value="" placeholder="Ingrese su tipo de Documento" required><br>
                 <label for="numeroid">Número de Documento</label><br>
@@ -74,8 +74,16 @@
                 </div>
 
                 <div>
-                    <label for="Lista1">Lista</label>
-                    <select name="listadesplegable" id="Lista1"></select>
+                    <select name="pais" id="pais1">
+                        <option value="Colombia">Colombia</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Argentina">Argentina</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="file" name="imagen" id="subirimg" multiple accept=".jpg,.png">
+
                 </div>
             </form>
         </section>
